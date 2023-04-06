@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINJI'S PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <style>
+        .cursor{
+            position: fixed;
+            top: 0;left: 0;
+            width: 20px;
+            height: 20px;
+            background: #65f242;
+            z-index: 10;
+            border-radius: 50%;
+            mix-blend-mode: difference;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+    </style>
+    <div class="cursor">
+
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="inner ">
+
+                <h1 class="logo">
+                    <a href=""><span>MJ.log</span></a>
+                </h1>
+
+                <div class="menu-wrap">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#">about</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#project">project</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#blog">blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-wrap">
+                    <a href="#contact">contact</a>
+                </div>
+                <div class="m-menu ">
+                    <div class="bar-wrap ">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                    </div>
+                    <ul class="m-list">
+                        <li class="m-item">
+                            <a href="#">about</a>
+                        </li>
+                        <li class="m-item">
+                            <a href="#project">project</a>
+                        </li>
+                        <li class="m-item">
+                            <a href="#blog">blog</a>
+                        </li>
+                        <li class="m-item">
+                            <a href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </header>
+        <main>
+            <section class="sc-about">
+
+                <h2>
+                    <span class="en">CHALLENGE</span>
+                    <span>안녕하세요 <img src="./assets/images/img1.png" alt=""></span>
+                    <span>치밀한 계획을 잘세우며</span>
+                    <span class="en">POSITIVE</span>
+                    <span class="en">OPTIMISTIC<img src="./assets/images/img1.png" alt=""></span>
+                    <span>기획을 이해하며</span>
+                    <span class="en">ADVENTURER</span>
+                    <span>협업에서의<img src="./assets/images/img1.png" alt=""> 강점</span>
+                    <span class="en">CREATIVE</span>
+                    <span class="point">최종 목표는 프론트앤드</span>
+                    <span class="en"><img src="./assets/images/img1.png" alt="">COOPERATION</span>
+                    <span class="en">LAUGHS EASILY</span>
+                    <span class="point">INFJ</span>
+                    <span class="en">FAITHFUL</span>
+                    <span>성실하고 독착적이며<img src="./assets/images/img1.png" alt=""></span>
+                    <span class="en">RESPONSIBLE</span>
+                    <span class="point">UI개발자</span>
+                </h2>
+                <!-- <div class="inner">
+                    <div class="txt-wrap">
+                        <h1 class="pu">PUBLISHER</h1>
+                        <h1 class="fe">FRONT-END</h1>
+                        <h1 class="pf"><p>portfolio</p> of</h1>
+                        <h1 class="name">kim min ji</h1>
+    
+    
+                        <span class="t1">creative</span>
+                        <span class="t2">challenge</span>
+                        <span class="t3">steady</span>
+                        <span class="t4">Cooperation</span>
+                    </div>
+                    
+                </div> -->
+            </section>
+            <section class="sc-project" id="project">
+                <div class="inner">
+                    <h2 class="sc-title">project<span>(6)</span></h2>
+                    
+                    <div class="pj-wrap">
+                        <!-- <div class="top-item">
+                            <a href="">
+                                <div class="img">
+                                    <div class="tooltiptext"><span>more view more view more view more view more view</span></div>
+                                    <img src="./assets/images/ysl.PNG" alt="">
+                                </div>
+                                <h3 class="title">YSL</h3>
+                                <p class="sub">입생로랑 사이트를 gsap을 사용하여 구현한 PC적응형 사이트입니다.</p>
+                            </a>
+                        </div> -->
+                        <div class="btn-wrap">
+                            <div class="btn on">
+                                <a href="" data-target="all">ALL</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="pc">PC</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="mobile">Mobile</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="responsive">반응형</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="new">리뉴얼코딩</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="clone">클론코딩</a>
+                            </div>
+                        </div>
+                        
+                        <ul class="pj-list" id="projectList">
+                            <!-- <li class="pj-item">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/movie-icon.png" alt="">
+                                    </div>
+                                    <h3 class="title">movie</h3>
+                                    <p class="sub">OMDb API를 사용하여 구현한 Mobile 사이트 입니다.</p>
+                                </a>
+                            </li>
+                            <li class="pj-item">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/cafe24-icon.jpg" alt="">
+                                    </div>
+                                    <h3 class="title">cafe24 마켓플러스</h3>
+                                    <p class="sub">CAFE24 마켓플러스를 클론코딩한 반응형 사이트 입니다.</p>
+                                </a>
+                            </li>
+                            <li class="pj-item">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/naver-icon.png" alt="">
+                                    </div>
+                                    <h3 class="title">naver</h3>
+                                    <p class="sub">네이버를 클론코딩한 PC적응형 사이트 입니다.</p>
+                                </a>
+                            </li>
+                            <li class="pj-item">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/seoul-icon.jpg" alt="">
+                                    </div>
+                                    <h3 class="title">seoul</h3>
+                                    <p class="sub">서울시청 사이트를 클론코딩한 PC적응형 사이트 입니다.</p>
+                                </a>
+                            </li>
+                            <li class="pj-item">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/megabox-icon.png" alt="">
+                                    </div>
+                                    <h3 class="title">megabox</h3>
+                                    <p class="sub">메가박스 사이트를 클론코딩한 Mobile 사이트 입니다.</p>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="sc-blog" id="blog">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2 class="sc-title">blog</h2>
+                        <div class="more-btn">
+                            <a href="https://velog.io/@mj0723" target="_blank">go to blog</a>
+                        </div>
+                    </div>
+                    <!-- swiper로 구현 -->
+                    <div class="swiper blogSwiper">
+                        <ul class="swiper-wrapper">
+                            
+                            <li class="swiper-slide">
+                                <div class="top-wrap">
+                                    <div class="thumb">
+                                        <img src="./assets/images/naver-icon.png" alt="">
+                                    </div>
+                                    <div class="more-btn">
+                                        <a href="https://velog.io/@mj0723/Portfolio-NAVER" target="_blank">READ MORE</a>
+                                    </div>
+                                </div>
+                                <p class="title">NAVER 클론코딩</p>
+                                <p class="summary">
+                                    네이버 퍼블리셔의 class와 스타일 방식 의도 파악하기
+                                </p>
+                                <strong>제작기간 : 2.5일</strong>
+                                <p class="etc"># IR / IS / blind 필수기법</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="top-wrap">
+                                    <div class="thumb">
+                                        <img src="./assets/images/seoul-icon.jpg" alt="">
+                                    </div>
+                                    <div class="more-btn">
+                                        <a href="https://velog.io/@mj0723/%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%B2%AD" target="_blank">READ MORE</a>
+                                    </div>
+                                </div>
+                                <p class="title">서울시청 관공서 클론코딩</p>
+                                <p class="summary">
+                                    웹 접근성과 탭 이동에 중점을 두어 작업한 프로젝트
+                                </p>
+                                <strong>제작기간 : 3일</strong>
+                                <p class="etc"># 스크린리더기의 이해 &nbsp;&nbsp;&nbsp; # 접근성 스크립트 구현</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="top-wrap">
+                                    <div class="thumb">
+                                        <img src="./assets/images/gsap-icon.jpg" alt="">
+                                    </div>
+                                    <div class="more-btn">
+                                        <a href="https://velog.io/@mj0723/GSAP" target="_blank">READ MORE</a>
+                                    </div>
+                                </div>
+                                <p class="title">GSAP(GreenSock Animation Platform)</p>
+                                <p class="summary">
+                                    애니메이션 라이브러리 GSAP 사용법
+                                </p>
+                                <strong> </strong>
+                                <p class="etc"># GSAP &nbsp;&nbsp;&nbsp; # 애니메이션 &nbsp;&nbsp;&nbsp; # 라이브러리 사용법 </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="top-wrap">
+                                    <div class="thumb">
+                                        <img src="./assets/images/seoul-icon.jpg" alt="">
+                                    </div>
+                                    <div class="more-btn">
+                                        <a href="">READ MORE</a>
+                                    </div>
+                                </div>
+                                <p class="summary">
+                                    “I feel a sense of pride at what we achieved working together for the website launch. Great teamwork. Great job”
+                                </p>
+                                <strong>Elizabeth Gokauchi</strong>
+                                <p class="etc">Senior Manager – Brand Marketing<br>
+                                    NUSTAR Resort & Casino | Universal Hotels and Resorts</p>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="sc-contact" id="contact">
+                <div class="inner">
+                    <h2 class="sc-title">contact</h2>
+                    <div class="wrap">
+                        <div class="left">
+                            <p>
+                                꾸준하게 배우며
+                                <br>성장하는 퍼블리셔가 되겠습니다!
+                                <br>책임감을 가지고 맡은 바에 
+                                <br> 최선을 다할것을 약속드립니다.
+                            </p>
+                            <span>※ 메일을 보내주시면 3일 이내에 확인후 연락드리겠습니다.</span>
+                        </div>
+                        <div class="right">
+                            <form action="contact-mail.php" method="post" class="form-style">
+                                <div class="col">
+                                    <label for="name">
+                                        <span>Name</span>
+                                    </label>
+                                    <input type="text" name="name" placeholder="이름을 입력하세요" required>
+                                </div>
+                                <div class="col">
+                                    <label for="tel">
+                                        <span>Tel</span>
+                                    </label>
+                                    <input type="text" name="tel" placeholder="연락처를 입력하세요" required>
+                                </div>
+                                <div class="col">
+                                    <label for="message">
+                                        <span>Message</span>
+                                    </label>
+                                    <textarea name="message" placeholder="메시지를 입력하세요" required></textarea>
+                                </div>
+                                <input type="submit" class="send-btn" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                    <p class="copy">ⓒ2023 All rights reserved.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+    
+        </footer>
+    </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

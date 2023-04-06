@@ -1,0 +1,52 @@
+{
+    "items":[
+        {
+            "id":"",
+            "thumb":"https://mir-s3-cdn-cf.behance.net/project_modules/1400/70fcb778688683.5cac6891cf924.jpg",
+            "title":"movie",
+            "sub":"OMDb API를 사용하여 구현한 영화 OTT사이트 입니다",
+            "link":"#",
+            "sort":"all, mobile, new"
+        },
+        {
+            "id":"",
+            "thumb":"https://upload.wikimedia.org/wikipedia/commons/9/90/Seoul_City_Hall_20190608_001.jpg",
+            "title":"cafe24 마켓플러스",
+            "sub":"CAFE24 마켓플러스를 클론코딩한 반응형 사이트 입니다.",
+            "link":"#",
+            "sort":"all, mobile, pc, responsive, clone"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/naver-icon.png",
+            "title":"naver",
+            "sub":"네이버를 클론코딩한 PC적응형 사이트 입니다.",
+            "link":"http://md0723.dothome.co.kr/naver/",
+            "sort":"all, pc, clone"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/seoul-icon.jpg",
+            "title":"seoul",
+            "sub":"서울시청 사이트를 클론코딩한 PC적응형 사이트 입니다.",
+            "link":"http://md0723.dothome.co.kr/seoul/",
+            "sort":"all, pc, clone"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/megabox-icon.png",
+            "title":"megabox",
+            "sub":"메가박스 사이트를 클론코딩한 Mobile 사이트 입니다.",
+            "link":"#",
+            "sort":"all, mobile, clone"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/ysl-thumb1.jpg",
+            "title":"ysl",
+            "sub":"입생로랑 사이트를 gsap을 사용하여 구현한 PC적응형 사이트입니다.",
+            "link":"#",
+            "sort":"all, pc, mobile, new, responsive"
+        }
+    ]
+}

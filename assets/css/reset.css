@@ -1,0 +1,60 @@
+
+:root{
+    --font-kr:'pretend', sans-serif;
+    --font-en:'Hanson','pretend', sans-serif;
+}
+/* @font-face {
+    font-family: 'General Sans';
+    src: url(../font/GeneralSans-Variable.ttf);
+} */
+@font-face {
+    font-family: 'Hanson';
+    src: url(../font/Hanson-Bold.woff2) format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'pretend';
+    src: url(../font/Pretendard-ExtraLight.woff2) format('woff2');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'pretend';
+    src: url(../font/Pretendard-Light.woff2) format('woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'pretend';
+    src: url(../font/Pretendard-Regular.woff2) format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'pretend';
+    src: url(../font/Pretendard-Medium.woff2) format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'pretend';
+    src: url(../font/Pretendard-Bold.woff2) format('woff2');
+    font-weight: bold;
+}
+
+
+
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;word-break:break-word;tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+ul{list-style: none;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+
+body{
+    background: rgba(24, 24, 26, 1);
+    color: #fff;
+    font-family: var(--font-kr);
+}
+::selection{
+    background: #65f242;
+}

@@ -1,0 +1,294 @@
+@import './reset.css';
+@import './common.css';
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    /* background: rgba(0, 0, 0, 0.6); */
+    /* backdrop-filter: blur(36px); */
+}
+header .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #0f0; */
+    margin: 20px 0;
+}
+
+header .logo{}
+header .logo a{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: #222;
+}
+header .logo a span{
+    position: relative;
+    font-family: var(--font-en);
+    font-size: 20px;
+}
+header .logo a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    background: #65f242;
+    transition: 0.3s;
+}
+header .logo a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    transition: 0.3s;
+}
+header .logo a:hover::before{transform: rotate(-15deg);}
+header .logo a:hover::after{transform: rotate(0deg);}
+
+header .logo-wrap{
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+header .logo-wrap a{}
+header .logo-wrap span{
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+header .logo-wrap span.hide{
+    animation: hideText 0.5s linear forwards;
+}
+/* header .logo-wrap span.ht2{
+    animation: hideText 0.5s linear forwards;
+} */
+header .logo-wrap span.move{
+    animation: hideText1 0.5s linear forwards;
+}
+/* header .logo-wrap span.ht4{
+    animation: hideText 0.5s linear forwards;
+} */
+@keyframes hideText {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-200px);}
+}
+@keyframes hideText1 {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-50px);}
+}
+header .menu-wrap{
+    background: rgba(0,0,0,0.6);
+    border-radius: 30px;
+    padding: 10px 40px;
+    backdrop-filter: blur(36px);
+    border: 4px solid #65f242;
+
+}
+header .menu-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* header .menu-item{
+    border: 1px solid #fff;
+} */
+header .menu-item a{
+    display: block;
+    padding: 8px 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
+    font-family: var(--font-en);
+}
+header .menu-item a:after{
+    position: absolute;
+    bottom: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    /* height: 0%; */
+    background: #65f242;
+    border-radius: 20px;
+    content: '';
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+header .menu-item a:hover:after{
+    opacity: 1;
+}
+header .menu-item a:hover{
+    color: #000;
+}
+
+header .contact-wrap{}
+header .contact-wrap a{
+    display: block;
+    padding: 12px 25px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+    position: relative;
+}
+header .contact-wrap a:after{
+    position: absolute;
+    bottom: 0;left: 0;
+    width: 100%;
+    height: 0%;
+    background: #65f242;
+    border-radius: 50px;
+    content: '';
+    z-index: -1;
+}
+
+header .contact-wrap a:hover:after{
+    animation: btn-bg 0.1s forwards;
+}
+header .contact-wrap a:hover{
+    color: #000;
+    border: 1px solid #65f242;
+}
+header .m-menu{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    /* *1024을 기준으로 화면을 보고 잡아야함 */
+ 
+    header .inner{
+        margin: 10px 0;
+    }
+    header .menu-list{
+        gap: 80px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    /* *768을보고 잡아야함 */
+    header .menu-list{
+        gap: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    /* *320을 보고 잡아야함 */
+    header .inner{
+        margin: 0;
+    }
+    header .logo-wrap span.h-txt{
+        display: none;
+    }
+    header .menu-wrap{
+        display: none;
+    }
+    header .contact-wrap{
+       display: none;
+    }
+    header .logo-wrap span.move{
+        animation: hideText2 0.5s linear forwards;
+    }
+    @keyframes hideText2 {
+        0%{
+            transform: translateX(0px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    
+    header .m-menu{
+        display: block;
+        position: relative;
+        /* background: #b89090; */
+        /* border: 1px solid #0f0; */
+    }
+    header .m-menu .bar-wrap{
+        position: relative;
+        width: 2.7em;
+        height: 2.7em;
+        background: #fff;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        transition: 0.7s cubic-bezier(0.5, 0.5, 0, 1), background-color 0.2s ease-in-out;
+        transform: translate(0%, 0%) rotate(0.001deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    header .m-menu .bar-wrap span{
+        position: absolute;
+        transition: 0.7s cubic-bezier(0.5, 0.5, 0, 1), background-color 0.2s ease-in-out;
+        width: 40%;
+        height: 1.5px;
+        background: #000;
+       
+    }
+    header .m-menu .bar-wrap span.bar1{
+        /* margin-top: -2px; */
+        transform: translateY(-0.15em) rotate(0.001deg);
+    }
+    header .m-menu .bar-wrap span.bar2{
+        /* margin-top: 2px; */
+        transform: translateY(0.15em) rotate(0.001deg);
+    }
+    header .m-menu .bar-wrap.active span.bar1{
+        transform: translateY(0em) rotate(45deg);
+        /* margin-left: -10px; */
+    }
+    header .m-menu .bar-wrap.active span.bar2{
+        transform: translateY(0em) rotate(-45deg);
+        /* margin-left: -10px; */
+    }
+    header .m-list{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        width: 200px;
+        padding: 45px 15px 20px 20px;
+
+        background-color: #fff;
+        border-radius: 1.5em;
+        /* transition: all 0.7s cubic-bezier(0.5, 0.5, 0, 1), background-color 0.2s ease-in-out; */
+        
+        display: none;
+    }
+    header .m-list.active{
+        /* transition: all 0.7s cubic-bezier(0.5, 0.5, 0, 1), background-color 0.2s ease-in-out; */
+        display: block;
+    }
+    header .m-item{}
+    header .m-item a{
+        display: block;
+        /* border: 1px solid #000; */
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 500;
+    }
+ 
+}

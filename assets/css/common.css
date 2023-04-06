@@ -1,0 +1,32 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.inner{
+    padding: 0 76px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* *1024을 기준으로 화면을 보고 잡아야함 */
+    .inner{
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    /* *768을보고 잡아야함 */
+  
+}
+
+@media screen and (max-width: 767px) {
+    /* *320을 보고 잡아야함 */
+    .inner{
+        padding: 0 10px;
+    }
+}
